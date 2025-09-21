@@ -49,7 +49,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "TinyUrlBackend API V1");
 });
 
-// ---------- API Endpoints ----------
+// API Endpoints
 
 // POST: Create short URL
 app.MapPost("/api/urls", async (UrlDto dto, AppDbContext db) =>
