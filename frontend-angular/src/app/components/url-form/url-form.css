@@ -1,0 +1,109 @@
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px; 
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.title h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.subcontainer {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.surl > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.surl input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.surl label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#btn {
+  margin-top: 10px;
+  width: 100%; 
+}
+
+#btn button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn button:hover {
+  background-color: #0056b3;
+}
+
+.genUrl {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #e9f5ff;
+  padding: 15px 20px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.genUrl p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.genUrl a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.genUrl a:hover {
+  text-decoration: underline;
+}
+
+.genUrl button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.genUrl button:hover {
+  background-color: #1e7e34;
+}

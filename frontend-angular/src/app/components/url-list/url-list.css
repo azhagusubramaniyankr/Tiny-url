@@ -1,0 +1,151 @@
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.title h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.searchbar {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.entries {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.onebyone {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  gap: 15px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.urls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1 1 auto;
+}
+
+.urls a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.urls a:hover {
+  text-decoration: underline;
+}
+
+.urls .original {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+.url-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.url-actions span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.url-actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.url-actions button:nth-of-type(1) {
+  background-color: #28a745;
+  color: white;
+}
+
+.url-actions button:nth-of-type(1):hover {
+  background-color: #1e7e34;
+}
+
+
+.url-actions button:nth-of-type(2) {
+  background-color: #dc3545;
+  color: white;
+}
+
+.url-actions button:nth-of-type(2):hover {
+  background-color: #a71d2a;
+}
+
+
+@media (max-width: 600px) {
+  .onebyone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .url-actions {
+    width: 100%;
+  }
+}
+
+
+.entries::-webkit-scrollbar {
+  width: 8px;
+}
+
+.entries::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.entries::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.entries::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

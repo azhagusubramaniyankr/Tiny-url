@@ -1,0 +1,32 @@
+<div class="maincontainer">
+  <div class="title">
+    <h2>Public URLs</h2>
+  </div>
+
+  <div class="searchbar">
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search URL"
+    />
+  </div>
+
+  <div class="entries">
+    <div class="onebyone" *ngFor="let url of filteredUrls()">
+      <div class="urls">
+        <a [href]="'http://localhost:5000/' + url.shortCode" target="_blank">
+          {{ 'http://localhost:5000/' + url.shortCode }}
+        </a>
+        <span class="original">{{ url.originalUrl }}</span>
+      </div>
+
+      <div class="url-actions">
+        <button (click)="copyText('http://localhost:5000/' + url.shortCode, url.id)">
+          {{ buttonTexts[url.id!] || 'copy'  }}
+        </button>
+        <span>Clicks: {{ url.clicks }}</span>
+        <button (click)="deleteUrl(url.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

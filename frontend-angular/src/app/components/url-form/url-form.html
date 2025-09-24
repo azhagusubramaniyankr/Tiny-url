@@ -1,0 +1,45 @@
+<div class="maincontainer">
+  <div class="title">
+    <h2>Tiny URL</h2>
+  </div>
+  <div class="subcontainer">
+    <form (ngSubmit)="onSubmit()">
+      <div class="surl">
+        <div>
+          <input
+            id="gnurl"
+            type="text"
+            placeholder="Enter URL to Shorten"
+            [(ngModel)]="longUrl"
+            name="longUrl"
+            required
+          />
+          <label id="lab">
+            <input type="checkbox" [(ngModel)]="isPrivate" name="isPrivate" />
+            IsPrivate
+          </label>
+        </div>
+        <div id="btn">
+          <button type="submit">Generate</button>
+        </div>
+  
+      </div>
+    </form>
+  </div>
+  <div *ngIf="createdUrl" class="genUrl">
+    <p>
+      Short URL:
+      <a [href]="'http://localhost:5000/' + createdUrl.shortCode" target="_blank">
+      {{ 'http://localhost:5000/' + createdUrl?.shortCode }}
+      </a>
+    </p>
+    <button (click)="copyText('http://localhost:5000/' + createdUrl.shortCode)">
+      {{ copyButtonText }}
+    </button>
+  </div>
+</div>
+
+
+
+
+
