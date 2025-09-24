@@ -1,4 +1,6 @@
 Frontend (Angular)  
+
+
     1. Open a new terminal and navigate to Angular frontend folder:  
             cd frontend-angular  
 
@@ -17,6 +19,8 @@ Frontend (Angular)
 
 
 Backend (ASP.NET Core)  
+
+
     1. Open terminal and navigate to backend folder:  
             cd backend-ASP.NET  
 
@@ -34,4 +38,3 @@ Backend (ASP.NET Core)
 
     5. Swagger UI for testing:  
             http://localhost:5000/swagger  
-            
